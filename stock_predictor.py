@@ -47,7 +47,7 @@ for ticker in tickers:
         print(f"\n📥 Downloading data for {ticker}...")
         data = yf.download(ticker, start=start_date, end=end_date, progress=False)
         if len(data) < 100:
-            print(f"⚠️ Not enough data for {ticker}, skipping.")
+            print(f" Not enough data for {ticker}, skipping.")
             continue
 
         # Feature engineering
@@ -65,7 +65,7 @@ for ticker in tickers:
 
         # News sentiment (last 30 days only)
         sentiment_map = {}
-        print("🧠 Fetching sentiment from Finnhub...")
+        print(" Fetching sentiment from Finnhub...")
         recent_dates = data.tail(30).index.strftime('%Y-%m-%d')
 
         for date in recent_dates:
@@ -120,6 +120,6 @@ for ticker in tickers:
 
 # === Summary Output ===
 summary_df = pd.DataFrame(summary)
-print("\n✅ Final Model Summary:\n")
+print("\n Final Model Summary:\n")
 print(summary_df.to_string(index=False))
 summary_df.to_csv("strategy_summary_finnhub_sentiment.csv", index=False)
