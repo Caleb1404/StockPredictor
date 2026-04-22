@@ -1,0 +1,27 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "PrivacyEnhanced Resort and Vacancy Online",
+    "owner": "Caleb Teklu Abate",
+    "description": "TDT4237 2026 Exercise 3 — Threat model for the PrivacyEnhanced Resort and Vacancy Online system.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Level-1 DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": [],
+        "description": "Level-1 DFD"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
